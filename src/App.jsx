@@ -1,7 +1,7 @@
 import Header from './Header.jsx'
 
 function App() {
-  return <Header></Header>
+  return <Header />
 }
 
 export default App
