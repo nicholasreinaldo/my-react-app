@@ -25,8 +25,10 @@ function App() {
   ]
   return (
     <>
-      <List items={vegetables} category="Vegetables" />
-      <List items={fruits} category="Fruits" />
+      {vegetables.length > 0 ? (
+        <List items={vegetables} category="Vegetables" />
+      ) : null}
+      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
     </>
   )
 }
