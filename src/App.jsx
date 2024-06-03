@@ -25,10 +25,10 @@ function App() {
   ]
   return (
     <>
-      {vegetables.length > 0 ? (
+      {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables" />
-      ) : null}
-      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
+      )}
+      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
     </>
   )
 }

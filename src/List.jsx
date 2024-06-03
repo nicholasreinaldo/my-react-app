@@ -1,3 +1,5 @@
+import propTypes from 'prop-types'
+
 function List(props) {
   const category = props.category
   const itemList = props.items
@@ -14,4 +16,12 @@ function List(props) {
     </>
   )
 }
+
+List.propTypes = {}
+
+List.defaultProps = {
+  category: 'Category',
+  items: [],
+}
+
 export default List
