@@ -1,3 +1,4 @@
+/* Card */
 .card {
   border: 1px solid rgb(179, 179, 179);
   border-radius: 10px;
@@ -28,7 +29,7 @@
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 30%);
 }
-
+/* Button */
 .button {
   background-color: hsl(200, 100%, 50%);
   color: white;
@@ -38,6 +39,7 @@
   cursor: pointer;
 }
 
+/* Student */
 .student {
   font-family: Arial, sans-serif;
   font-size: 2em;
@@ -49,6 +51,7 @@
   margin: 0;
 }
 
+/* UserGreeting */
 .welcome-message {
   font-size: 2.5em;
   background-color: green;
@@ -65,4 +68,23 @@
   padding: 10px;
   border-radius: 5px;
   margin: 0;
+}
+
+/* List */
+
+.list-category {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: darkslategray;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+.list-items li {
+  font-size: 2em;
+  list-style: none;
+  color: dakrslategrey;
 }
