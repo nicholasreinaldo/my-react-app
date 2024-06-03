@@ -8,7 +8,7 @@ import Student from './Student.jsx'
 function App() {
   return (
     <>
-      <Student name="Spongebob" />
+      <Student name="Spongebob" age={30} isStudent={true} />
     </>
   )
 }
