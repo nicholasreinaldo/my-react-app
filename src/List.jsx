@@ -7,6 +7,11 @@ function List(props) {
       {item.name}: &nbsp; <b>{item.calories}</b>
     </li>
   ))
-  return <ol>{listItems}</ol>
+  return (
+    <>
+      <h3>{category}</h3>
+      <ol>{listItems}</ol>
+    </>
+  )
 }
 export default List
