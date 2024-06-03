@@ -6,7 +6,11 @@ import Button from './Button.jsx'
 import Student from './Student.jsx'
 
 function App() {
-  return <></>
+  return (
+    <>
+      <UserGreeting />
+    </>
+  )
 }
 
 export default App
