@@ -86,5 +86,11 @@
 .list-items li {
   font-size: 2em;
   list-style: none;
-  color: dakrslategrey;
+  color: darkslategray;
+  text-align: center;
+  margin: 0;
+}
+
+.list-items li:hover {
+  color: lightgreen;
 }
