@@ -1,8 +1,4 @@
 function UserGreeting(rops) {
-  return (
-    <>
-      <UserGreeting isLoggedIn={true} username="BroCode" />
-    </>
-  )
+  return <></>
 }
 export default UserGreeting
