@@ -1,7 +1,7 @@
-import Button from './ClickButton'
+import ClickButton from './ClickButton'
 
 function App() {
-  return <Button />
+  return <ClickButton />
 }
 
 export default App
