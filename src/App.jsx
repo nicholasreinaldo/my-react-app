@@ -1,9 +1,11 @@
 import ProfilePicture from './ProfilePicture'
-import MyComponent from './MyComponent'
+import MyComponent1 from './MyComponent (useState)'
 import Counter from './Counter'
+import MyComponent from './MyComponent (useState)'
+
 
 function App() {
-  return <Counter />
+  return <MyComponent/>
   
 }
 
