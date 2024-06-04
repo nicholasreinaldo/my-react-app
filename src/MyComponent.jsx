@@ -5,11 +5,10 @@ function MyComponent() {
     const [name, setName] = useState();
 
     const updateName = () => {
-        name ="Spongebob";
-        console.log(name);
+        setName("Spongebob")
     }
     return ( <div>
-                <p>Name:{name}</p>
+                <p>Name: {name}</p>
                 <button onClick={updateName}>Set Name</button>
              </div>);
 }
