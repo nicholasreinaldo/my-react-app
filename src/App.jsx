@@ -1,7 +1,7 @@
-import ClickButton from './ClickButton'
+import ProfilePicture from './ProfilePicture'
 
 function App() {
-  return <ClickButton />
+  return <ProfilePicture />
 }
 
 export default App
