@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 
 function MyComponent() {
     
-    const [name, setName] = useState();
+    const [name, setName] = useState("Guest");
+    const [age, setAge] = useState();
 
     const updateName = () => {
         setName("Spongebob")
