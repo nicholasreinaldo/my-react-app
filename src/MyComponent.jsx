@@ -6,11 +6,12 @@ function MyComponent() {
 
     const updateName = () => {
         name ="Spongebob";
+        console.log(name);
     }
     return ( <div>
                 <p>Name:{name}</p>
-                <button onClick={updateName}Set Name></button>
-             </div>)
+                <button onClick={updateName}>Set Name</button>
+             </div>);
 }
 
 export default MyComponent
