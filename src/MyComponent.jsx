@@ -4,7 +4,7 @@ function MyComponent() {
   const [car, setCar] = useState({ year: 2024, make: 'Ford', model: 'Mustang' })
 
   function handleYearChange(event) {
-    setCar({ year: 2025 })
+    setCar({ ...car, year: 2025 })
   }
 
   function handleMakeChange(event) {}
