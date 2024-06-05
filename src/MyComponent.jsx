@@ -4,12 +4,15 @@ function MyComponent() {
   const [car, setCar] = useState({ year: 2024, make: 'Ford', model: 'Mustang' })
 
   function handleYearChange(event) {
-    setCar({ ...car, year: 2025 })
+    setCar((c) => ({ ...c, year: event.target.value }))
   }
 
-  function handleMakeChange(event) {}
-
-  function handleModelChange(event) {}
+  function handleMakeChange(event) {
+    setCar((c) => ({ ...c, make: event.target.value }))
+  }
+  function handleModelChange(event) {
+    setCar((c) => ({ ...c, model: event.target.value }))
+  }
 
   return (
     <div>
