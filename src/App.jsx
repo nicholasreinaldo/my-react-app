@@ -6,7 +6,7 @@ import ColorPicker from './ColorPicker'
 import MyComponent from './MyComponent'
 
 function App() {
-  return <MyComponent />
+  return <Counter />
 }
 
 export default App
