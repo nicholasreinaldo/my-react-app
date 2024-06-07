@@ -7,7 +7,7 @@ function MyComponent() {
   const [carModel, setCarModel] = useState("");
 
   function handleAddCar(){
-
+    const newCar = {year: carYear, make: carMake, model: carModel};
   }
 
   function handleRemoveCar(index){
@@ -15,15 +15,15 @@ function MyComponent() {
   }
 
   function handleYearChange(event){
-
-  }
+    setCarYear(event.target.value);
+  } 
 
   function handleMakeChange(event){
-
+    setCarMake(event.target.value)
   }
 
   function handleModelChange(event){
-
+    setCarModel(event.target.value)
   }
 
 
