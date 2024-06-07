@@ -4,7 +4,8 @@ function MyComponent() {
     const [foods, setFoods] = useState(["Apple", "Orange", "Banana"]);
 
     function handleAddFood(){
-        const newFood = document.getElementById("foodInput").ariaValueMax;
+        const newFood = document.getElementById("foodInput").value;
+        document.getElementById("foodInput").value = "";
     };
 
     function handleRemoveFood(){
@@ -17,7 +18,7 @@ function MyComponent() {
             {foods.map((food,index) => <li key={index}>{food}</li>)}
         </ul>
         <input type="text" id="food" placeholder="Enter food name" />
-        <button onClick={handleAddFood}></button>
+        <button onClick={handleAddFood}>Add Food</button>
     </div>);
 }
 
