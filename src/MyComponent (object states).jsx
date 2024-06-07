@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import React, { useState } from 'react'
 
 function MyComponent() {
   const [car, setCar] = useState({ year: 2024, make: 'Ford', model: 'Mustang' })
