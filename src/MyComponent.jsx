@@ -11,6 +11,11 @@ function MyComponent() {
                     make: carMake, 
                     model: carModel};
     setCars(c => [...c, newCar])
+
+    setCarYear(new Date().getFullYear());
+    setCarMake("")
+    setCarModel("")
+
   }
 
   function handleRemoveCar(index){
