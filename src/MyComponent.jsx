@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 
 function MyComponent() {
-  const [cars, setCar] = useState([]);
+  const [cars, setCars] = useState([]);
   const [carYear, setCarYear] = useState(new Date().getFullYear());
   const [carMake, setCarMake] = useState("");
   const [carModel, setCarModel] = useState("");
 
   function handleAddCar(){
-    const newCar = {year: carYear, make: carMake, model: carModel};
+    const newCar = {year: carYear, 
+                    make: carMake, 
+                    model: carModel};
+    setCars(c => [...c, newCar])
   }
 
   function handleRemoveCar(index){
@@ -31,7 +34,10 @@ function MyComponent() {
     <div>
       <h2>List of Car Objects</h2>
       <ul>
-
+        {cars.map((car, index) => 
+        <li key={index}>
+            {car.year} {car.make} {car.model}
+        </li>)}
       </ul>
 
       <input type="number" value={carYear} onChange={handleYearChange}/><br/>
