@@ -6,18 +6,35 @@ function MyComponent() {
   const [carsMake, setCarMake] = useState("");
   const [carsModel, setCarModel] = useState("");
 
+  function handleAddCar(){
+
+  }
+
+  function handleRemoveCar(index){
+
+  }
+
+  function handleYearChange(event){
+
+  }
+
+  function handleMakeChange(event){
+
+  }
+
+  function handleModelChange(event){
+
+  }
+
 
   return (
     <div>
-      <p>
-        Your favorite car is: {car.year} {car.make} {car.model}
-      </p>
-      <input type="number" value={car.year} onChange={handleYearChange} />
-      <br />
-      <input type="text" value={car.make} onChange={handleMakeChange} />
-      <br />
-      <input type="text" value={car.model} onChange={handleModelChange} />
-      <br />
+      <h2>List of Car Objects</h2>
+      <ul>
+
+      </ul>
+
+      <input type="number" value={carYear} onChange={handleYearChange}></input>
     </div>
   )
 }
