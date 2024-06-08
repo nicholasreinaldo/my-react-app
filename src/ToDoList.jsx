@@ -25,7 +25,7 @@ function ToDoList() {
     }
 
     return(<div className="to-do-list">
-        <h1>To-Do_list</h1>
+        <h1>To-Do-List</h1>
 
         <div>
             <input type ="text" 
@@ -44,8 +44,23 @@ function ToDoList() {
             {tasks.map((task,index) => 
                 <li key={index}>
                     <span className="text">{task}</span>
-                    <button>
+                    <button 
+                        className="delete-button"
+                        onClick={() => deleteTask(index)}
+                            >
                         Delete
+                    </button>
+                    <button 
+                        className="move-button"
+                        onClick={() => moveTaskUp(index)}
+                            >
+                        ^
+                    </button>
+                    <button 
+                        className="move-button"
+                        onClick={() => moveTaskDown(index)}
+                            >
+                        v
                     </button>
                 </li>
             )}
