@@ -171,14 +171,19 @@ input[type='color'] {
 
 /* To do list */
 
+body {
+  background-color: black;
+}
+
 .to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 100px;
 }
 
-h1 {
+.to-do-list h1 {
   font-size: 4rem;
+  color: white;
 }
 
 button {
