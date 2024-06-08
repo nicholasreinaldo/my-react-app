@@ -5,10 +5,10 @@ import MyComponent2 from './MyComponent (onChange)' // Change to import MyCompon
 import ColorPicker from './ColorPicker'
 import MyComponent3 from './MyComponent (object states)' // Change to import MyComponent if want to use 
 import MyComponent4 from './MyComponent (array states)'
-import MyComponent from './MyComponent'
+import ToDoList from './ToDoList'
 
 function App() {
-  return <MyComponent />
+  return <ToDoList />
 }
 
 export default App
