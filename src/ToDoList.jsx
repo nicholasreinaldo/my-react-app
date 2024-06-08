@@ -10,6 +10,12 @@ function ToDoList() {
 
     function addTask() {
 
+        if(newTask.trim() !== "") {
+            setTasks(t = [...t, newTask]);
+            setNewTask("") // reset after add tasks
+        }
+
+
     }
 
     function deleteTask(index) {
