@@ -8,9 +8,10 @@ import MyComponent4 from './MyComponent (array states)'
 import ToDoList from './ToDoList'
 import MyComponentuseEffect1 from './MyComponent (useEffect 1)'
 import MyComponent from './MyComponent'
+import DigitalClock from './DigitalClock'
 
 function App() {
-  return <MyComponent />
+  return <DigitalClock />
 }
 
 export default App
