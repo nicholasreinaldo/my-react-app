@@ -5,8 +5,8 @@ function MyComponent() {
   const [color, setColor] = useState('Green')
 
   useEffect(() => {
-    document.title = `Count: ${count}`
-  }, [count])
+    document.title = `Count: ${count} ${color}`
+  }, [count, color])
 
   function addCount() {
     setCount((c) => c + 1)
