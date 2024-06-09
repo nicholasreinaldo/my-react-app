@@ -171,10 +171,6 @@ input[type='color'] {
 
 /* To do list */
 
-body {
-  background-color: black;
-}
-
 .to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -201,7 +197,6 @@ button {
   background-color: green;
 }
 
-
 .add-button:hover {
   background-color: darkgreen;
 }
@@ -209,7 +204,6 @@ button {
 .delete-button {
   background-color: red;
 }
-
 
 .delete-button:hover {
   background-color: darkred;
@@ -219,17 +213,16 @@ button {
   background-color: lightblue;
 }
 
-
 .move-button:hover {
   background-color: blue;
 }
 
-input[type="text"] {
+input[type='text'] {
   font-size: 1.6rem;
   padding: 10px;
   border: 2px solid lightgray;
   border-radius: 5px;
-  color:grey
+  color: grey;
 }
 
 ol {
@@ -252,7 +245,8 @@ li {
   flex: 1;
 }
 
-.delete-button, .move-button {
+.delete-button,
+.move-button {
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
