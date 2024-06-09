@@ -9,6 +9,11 @@ function MyComponent() {
   useEffect(() => {
     window.addEventListener('resize', handleResize)
     console.log('EVENT LISTENER ADDED')
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      console.log('EVENT LISTER REMOVED')
+    }
   }, [])
 
   function handleResize() {
