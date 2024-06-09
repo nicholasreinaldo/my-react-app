@@ -6,6 +6,7 @@ import ColorPicker from './ColorPicker'
 import MyComponent3 from './MyComponent (object states)' // Change to import MyComponent if want to use
 import MyComponent4 from './MyComponent (array states)'
 import ToDoList from './ToDoList'
+import MyComponentuseEffect1 from './MyComponent (useEffect 1)'
 import MyComponent from './MyComponent'
 
 function App() {
