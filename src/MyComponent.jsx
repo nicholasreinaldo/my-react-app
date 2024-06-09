@@ -16,6 +16,8 @@ function MyComponent() {
     }
   }, [])
 
+  useEffect(() => {})
+
   function handleResize() {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
