@@ -1,6 +1,6 @@
 import ComponentD from './ComponentD'
 
-function ComponentC() {
+function ComponentC(props) {
   return (
     <div className="box">
       <h1>ComponentC</h1>
