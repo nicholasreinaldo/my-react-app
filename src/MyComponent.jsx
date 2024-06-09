@@ -6,6 +6,9 @@ function MyComponent() {
 
   useEffect(() => {
     document.title = `Count: ${count} ${color}`
+    return () => {
+      // SOME CLEAN UP CODE
+    }
   }, [count, color])
 
   function addCount() {
