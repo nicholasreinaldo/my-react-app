@@ -13,6 +13,15 @@ function DigitalClock() {
     }
   }, [])
 
+  function formatTime() {
+    let hours = time.getHours()
+    const minutes = time.getMinutes()
+    const seconds = time.getSeconds()
+    const meridiem = hours >= 12 ? 'PM' : 'AM'
+
+    hours = hours % 12
+  }
+
   return (
     <div className="clock-container">
       <div className="clock">
