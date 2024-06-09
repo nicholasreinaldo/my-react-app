@@ -2,6 +2,8 @@ import React, { useState, createContext } from 'react'
 
 import ComponentB from './ComponentB'
 
+export const UserContext = createContext()
+
 function ComponentA() {
   const [user, setUser] = useState('Nicho')
 
@@ -9,7 +11,9 @@ function ComponentA() {
     <div className="box">
       <h1>ComponentA</h1>
       <h2>{`Hello ${user}`}</h2>
-      <ComponentB user={user} />
+      <UserContext.Provider value={user}>
+        <ComponentB user={user} />
+      </UserContext.Provider>
     </div>
   )
 }
