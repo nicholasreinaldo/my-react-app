@@ -6,7 +6,28 @@ function Stopwatch() {
   const intervalIdRef = useRef(null)
   const startTimeRef = useRef(0)
 
-  return <></>
+  useEffect(() => {}, [isRunning])
+
+  function start() {}
+
+  function stop() {}
+
+  function reset() {}
+
+  function formatTime() {
+    return `00:00:00`
+  }
+
+  return (
+    <div className="stopwatch">
+      <div className="display">{formatTime()}</div>
+      <div className="controls">
+        <button onClick className="start-button">
+          Start
+        </button>
+      </div>
+    </div>
+  )
 }
 
 export default Stopwatch
