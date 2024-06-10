@@ -12,16 +12,22 @@ function MyComponent() {
   function handleClick1() {
     inputRef1.current.focus()
     inputRef1.current.style.background = 'yellow'
+    inputRef2.current.style.background = ''
+    inputRef3.current.style.background = ''
   }
 
   function handleClick2() {
     inputRef2.current.focus()
+    inputRef1.current.style.background = ''
     inputRef2.current.style.background = 'yellow'
+    inputRef3.current.style.background = ''
   }
 
   function handleClick3() {
     inputRef3.current.focus()
     inputRef3.current.style.background = 'yellow'
+    inputRef2.current.style.background = ''
+    inputRef1.current.style.background = ''
   }
 
   return (
