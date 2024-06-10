@@ -11,9 +11,10 @@ import MyComponentuseEffect2 from './MyComponent (useEffect 2)'
 import DigitalClock from './DigitalClock'
 import ComponentA from './ComponentA'
 import MyComponent from './MyComponent'
+import Stopwatch from './Stopwatch'
 
 function App() {
-  return <MyComponent />
+  return <Stopwatch />
 }
 
 export default App
