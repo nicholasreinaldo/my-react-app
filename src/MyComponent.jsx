@@ -1,23 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 function MyComponent() {
-  const ref = useRef(null)
-
-  console.log(ref.current)
+  const inputRef = useRef(null)
 
   useEffect(() => {
     console.log('COMPONENT RENDERED')
-    console.log(inputRef)
   })
 
   function handleClick() {
-    ref.current++
+    inputRef.current.focus()
   }
 
   return (
     <div>
       <button onClick={handleClick}>Click me!</button>
-      <input />
+      <input ref={inputRef} />
     </div>
   )
 }
