@@ -8,7 +8,10 @@ function Stopwatch() {
 
   useEffect(() => {}, [isRunning])
 
-  function start() {}
+  function start() {
+    setIsRunning(true)
+    startTimeRef.current = Date.now() - elapsedTime
+  }
 
   function stop() {}
 
@@ -22,8 +25,14 @@ function Stopwatch() {
     <div className="stopwatch">
       <div className="display">{formatTime()}</div>
       <div className="controls">
-        <button onClick className="start-button">
+        <button onClick={start} className="start-button">
           Start
+        </button>
+        <button onClick={stop} className="stop-button">
+          Stop
+        </button>
+        <button onClick={reset} className="reset-button">
+          Reset
         </button>
       </div>
     </div>

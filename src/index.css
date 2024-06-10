@@ -30,14 +30,14 @@
   color: hsl(0, 0%, 30%);
 }
 /* Button */
-.button {
+/* .button {
   background-color: hsl(200, 100%, 50%);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-}
+} */
 
 /* Student */
 .student {
@@ -182,7 +182,7 @@ input[type='color'] {
   color: white;
 }
 
-button {
+/* button {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -191,7 +191,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5 ease;
-}
+} */
 
 .add-button {
   background-color: green;
@@ -284,4 +284,69 @@ li {
 .box {
   border: 3px solid;
   padding: 25px;
+}
+
+/* Stopwatch app */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: white;
+  padding: 30px;
+}
+
+.display {
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(65, 65, 65);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.724);
+  margin-bottom: 25px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.start-button {
+  background-color: green;
+}
+
+.start-button:hover {
+  background-color: darkgreen;
+}
+
+.stop-button {
+  background-color: red;
+}
+
+.stop-button:hover {
+  background-color: darkred;
+}
+
+.reset-button {
+  background-color: blue;
+}
+
+.reset-button:hover {
+  background-color: darkblue;
 }
