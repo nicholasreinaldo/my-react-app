@@ -7,12 +7,13 @@ import MyComponent3 from './MyComponent (object states)' // Change to import MyC
 import MyComponent4 from './MyComponent (array states)'
 import ToDoList from './ToDoList'
 import MyComponentuseEffect1 from './MyComponent (useEffect 1)'
-import MyComponent from './MyComponent'
+import MyComponentuseEffect2 from './MyComponent (useEffect 2)'
 import DigitalClock from './DigitalClock'
 import ComponentA from './ComponentA'
+import MyComponent from './MyComponent'
 
 function App() {
-  return <ComponentA />
+  return <MyComponent />
 }
 
 export default App
