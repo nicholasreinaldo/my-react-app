@@ -12,6 +12,10 @@ function Stopwatch() {
         setElapsedTime(Date.now() - startTimeRef.current)
       }, 10)
     }
+
+    return () => {
+      clearInterval(intervalIdRef.current)
+    }
   }, [isRunning])
 
   function start() {
